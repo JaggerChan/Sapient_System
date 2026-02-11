@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "registration.proto";
+package sapient_msg.bsi_flex_335_v2_0;
+
+message SkyRegistrationMessage {
+    string timestamp = 1;
+    string nodeId = 2;
+    Registration registration = 3;
+}
